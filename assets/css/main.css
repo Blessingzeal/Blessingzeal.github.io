@@ -1428,26 +1428,17 @@ section,
 --------------------------------------------------------------*/
 .attention-pop {
   display: inline-block;
-  animation: popUp 2s 2; /* each pop lasts 2s, repeat twice */
-  animation-fill-mode: forwards; /* stay at final state after animation */
+  animation: popUp 2s ease 0s 2 forwards; /* each pop lasts 2s, repeat twice */
 }
 
 /* Different delays for each portfolio section */
-.pop-1 {
-  animation-delay: 0s;  /* first one starts immediately */
-}
+.pop-1 {animation-delay: 0s;}
 
-.pop-2 {
-  animation-delay: 0.5s; /* second one pops 0.5s later */
-}
+.pop-2 {animation-delay: 0.5s;}
 
-.pop-3 {
-  animation-delay: 1s;   /* third one pops 1s later */
-}
+.pop-3 {animation-delay: 1s;}
 
-.pop-4 {
-  animation-delay: 1.5s; /* fourth one pops 1.5s later */
-}
+.pop-4 {animation-delay: 1.5s;}
 
 /* Keyframes for pop animation */
 @keyframes popUp {
