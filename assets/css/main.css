@@ -1424,26 +1424,5 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Pop up effect
+
 --------------------------------------------------------------*/
-.attention-pop {
-  display: inline-block;
-  animation: popUp 2s ease 0s 2 forwards; /* each pop lasts 2s, repeat twice */
-}
-
-/* Different delays for each portfolio section */
-.pop-1 {animation-delay: 0s;}
-
-.pop-2 {animation-delay: 0.5s;}
-
-.pop-3 {animation-delay: 1s;}
-
-.pop-4 {animation-delay: 1.5s;}
-
-/* Keyframes for pop animation */
-@keyframes popUp {
-  0%   { transform: translateY(0); opacity: 1; }
-  25%  { transform: translateY(-10px); opacity: 1; } /* pop up */
-  50%  { transform: translateY(0); opacity: 1; }    /* back down */
-  100% { transform: translateY(0); opacity: 1; }    /* remain static */
-}
