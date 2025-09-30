@@ -1,10 +1,3 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -1431,8 +1424,35 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Pop up effect
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.attention-pop {
+  display: inline-block;
+  animation: popUp 2s 2; /* each pop lasts 2s, repeat twice */
+  animation-fill-mode: forwards; /* stay at final state after animation */
+}
+
+/* Different delays for each portfolio section */
+.pop-1 {
+  animation-delay: 0s;  /* first one starts immediately */
+}
+
+.pop-2 {
+  animation-delay: 0.5s; /* second one pops 0.5s later */
+}
+
+.pop-3 {
+  animation-delay: 1s;   /* third one pops 1s later */
+}
+
+.pop-4 {
+  animation-delay: 1.5s; /* fourth one pops 1.5s later */
+}
+
+/* Keyframes for pop animation */
+@keyframes popUp {
+  0%   { transform: translateY(0); opacity: 1; }
+  25%  { transform: translateY(-10px); opacity: 1; } /* pop up */
+  50%  { transform: translateY(0); opacity: 1; }    /* back down */
+  100% { transform: translateY(0); opacity: 1; }    /* remain static */
 }
